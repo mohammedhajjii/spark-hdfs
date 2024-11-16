@@ -10,7 +10,9 @@ public class SalesByCity {
     private static final String SALES_FILE_LOCATION = "hdfs://namenode:8020/input/sales.txt";
 
     public static void main(String[] args) {
+        //load spark configs for remote:
         SparkConf sparkConf = SalesByCityConfig.remoteConf(APP_NAME);
+        // run sales by city job:
         SalesByCityJobs.run(sparkConf, SALES_FILE_LOCATION);
     }
 }

@@ -11,7 +11,10 @@ public class SalesByCity {
     private static final String SALES_FILE_LOCATION = "sales.txt";
 
     public static void main(String[] args) {
+        // load local configurations:
         SparkConf sparkConf = SalesByCityConfig.localConf(APP_NAME);
+
+        // run job:
         SalesByCityJobs.run(sparkConf, SALES_FILE_LOCATION);
     }
 }
