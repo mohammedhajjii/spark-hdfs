@@ -286,6 +286,7 @@ in order to pass `year argument` to main method of `SalesByCityAndYear` job, we 
 ## Create and run spark jobs in spark-hdfs cluster
 
 in this case we try to run the previous spark jobs `SalesByCity` and `SalesByCityAndYear`, 
+in `spark-hdfs` cluster,
 so the first step is to configure and start `Spark-HDFS` cluster in docker, and what will be changed in our previous programs
 is `SALES_FILE_LOCATION` and `master url` (using `SalesByCityConfig.remoteConf(...)`).
 
