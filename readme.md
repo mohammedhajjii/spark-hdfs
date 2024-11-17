@@ -13,6 +13,32 @@ the structure of `sales.txt` file is: `Date | City | Product | Price`:
 ![sales-file](./screens/sales-file.png)
 
 
+## Apache Spark maven dependencies
+
+here we have the necessary `Apache spark` dependencies
+
+```xml
+ <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.13</artifactId>
+            <version>3.5.3</version>
+        </dependency>
+
+
+        <!--disable slf4j log implementation-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>1.7.32</version>
+            <scope>runtime</scope>
+        </dependency>
+
+</dependencies>
+
+```
+
 ## SalesByCityConfig class
 
 in order to structure and organize our code, we create this class that allow us

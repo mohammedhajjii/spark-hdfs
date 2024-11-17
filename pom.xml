@@ -23,16 +23,13 @@
         </dependency>
 
 
+<!--        disable slf4j log implementation-->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-nop</artifactId>
             <version>1.7.32</version>
             <scope>runtime</scope>
         </dependency>
-
-
-
-
 
     </dependencies>
 
